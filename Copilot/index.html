@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Turísticos</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <header>
+        <h1>Explora Destinos Turísticos</h1>
+        <nav>
+            <ul>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#info">Sobre el sitio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinos">
+            <h2>Destinos de Playa</h2>
+            <div class="destinos-grid">
+                <article>
+                    <img src="imagenes/mardel.png" alt="Mar del Plata">
+                    <h3>Mar del Plata</h3>
+                    <p>Ciudad costera argentina famosa por sus playas y vida nocturna.</p>
+                    <a href="guias/mardel.pdf" download>Descargar guía</a>
+                </article>
+                <article>
+                    <img src="imagenes/cancun.png" alt="Cancún">
+                    <h3>Cancún</h3>
+                    <p>Destino mexicano con playas paradisíacas y resorts de lujo.</p>
+                    <a href="guias/cancun.pdf" download>Descargar guía</a>
+                </article>
+                <article>
+                    <img src="imagenes/ibiza.png" alt="Ibiza">
+                    <h3>Ibiza</h3>
+                    <p>Isla española reconocida por sus playas y ambiente festivo.</p>
+                    <a href="guias/ibiza.pdf" download>Descargar guía</a>
+                </article>
+            </div>
+
+            <h2>Destinos de Montaña</h2>
+            <div class="destinos-grid">
+                <article>
+                    <img src="imagenes/bariloche.png" alt="Bariloche">
+                    <h3>Bariloche</h3>
+                    <p>Ciudad argentina rodeada de montañas y lagos, ideal para el turismo de aventura.</p>
+                    <a href="guias/bariloche.pdf" download>Descargar guía</a>
+                </article>
+                <article>
+                    <img src="imagenes/machu.png" alt="Machu Picchu">
+                    <h3>Machu Picchu</h3>
+                    <p>Antigua ciudad inca en Perú, Patrimonio de la Humanidad.</p>
+                    <a href="guias/machu.pdf" download>Descargar guía</a>
+                </article>
+                <article>
+                    <img src="imagenes/alpes.png" alt="Alpes Suizos">
+                    <h3>Alpes Suizos</h3>
+                    <p>Montañas europeas famosas por sus paisajes y deportes de invierno.</p>
+                    <a href="guias/alpes.pdf" download>Descargar guía</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="info">
+            <h2>Sobre el sitio</h2>
+            <p>Este sitio es mantenido por un equipo apasionado por el turismo y la exploración de nuevos destinos. Nuestro objetivo es inspirar a los viajeros a descubrir lugares únicos alrededor del mundo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Destinos Turísticos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
