@@ -1,0 +1,631 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f5;
+    color: #263238;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.encabezado {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor {
+    width: min(1150px, 90%);
+    margin: auto;
+}
+
+.navegacion {
+    min-height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #075985;
+}
+
+.logo span {
+    color: #f59e0b;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+.menu {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: #0284c7;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(3, 37, 65, 0.65),
+            rgba(3, 37, 65, 0.65)
+        ),
+        url("imágenes/hero.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+
+    padding: 60px 20px;
+}
+
+.hero-contenido {
+    max-width: 750px;
+}
+
+.subtitulo {
+    color: #fbbf24;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p:not(.subtitulo) {
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BOTÓN PRINCIPAL
+========================= */
+
+.boton-principal {
+    display: inline-block;
+
+    background-color: #f59e0b;
+    color: white;
+
+    padding: 15px 30px;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.boton-principal:hover,
+.boton-principal:focus {
+    background-color: #d97706;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   SECCIÓN DESTINOS
+========================= */
+
+.seccion-destinos {
+    padding: 90px 20px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.titulo-seccion > p:first-child {
+    color: #0284c7;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 10px 0 20px;
+    color: #123047;
+}
+
+.descripcion-seccion {
+    color: #64748b;
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categoria {
+    width: min(1200px, 90%);
+    margin: 0 auto 100px;
+}
+
+.encabezado-categoria {
+    margin-bottom: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    gap: 30px;
+}
+
+.encabezado-categoria div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icono-categoria {
+    font-size: 2.5rem;
+}
+
+.encabezado-categoria h2 {
+    font-size: 2rem;
+    color: #075985;
+}
+
+.encabezado-categoria > p {
+    max-width: 400px;
+    color: #64748b;
+}
+
+
+/* =========================
+   GRID DE DESTINOS
+========================= */
+
+.grid-destinos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.tarjeta-destino {
+    background-color: white;
+
+    border-radius: 16px;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta-destino:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-destino img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    padding: 25px;
+}
+
+.contenido-tarjeta h3 {
+    color: #123047;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.contenido-tarjeta p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.contenido-tarjeta a {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #0284c7;
+
+    font-weight: bold;
+}
+
+.contenido-tarjeta a:hover,
+.contenido-tarjeta a:focus {
+    color: #075985;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CATEGORÍA MONTAÑA
+========================= */
+
+.categoria-montana {
+    padding-top: 40px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    background:
+        linear-gradient(135deg, #075985, #0f766e);
+
+    padding: 90px 20px;
+    color: white;
+}
+
+.contenedor-contacto {
+    width: min(1100px, 90%);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+    align-items: center;
+}
+
+.informacion-contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.informacion-contacto > p:not(.subtitulo) {
+    margin-bottom: 30px;
+    color: #e0f2fe;
+}
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.datos-contacto div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.datos-contacto span {
+    font-size: 1.3rem;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario-contacto {
+    background-color: white;
+    color: #263238;
+
+    padding: 35px;
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-formulario label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+
+    padding: 12px;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+
+    border-color: #0284c7;
+
+    box-shadow:
+        0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.formulario-contacto button {
+    width: 100%;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #f59e0b;
+    color: white;
+
+    padding: 14px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.formulario-contacto button:hover,
+.formulario-contacto button:focus {
+    background-color: #d97706;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SOBRE NOSOTROS
+========================= */
+
+.nosotros {
+    padding: 90px 20px;
+
+    background-color: #ffffff;
+}
+
+.contenido-nosotros {
+    width: min(800px, 90%);
+    margin: auto;
+
+    text-align: center;
+}
+
+.contenido-nosotros .subtitulo {
+    color: #0284c7;
+}
+
+.contenido-nosotros h2 {
+    color: #123047;
+    font-size: 2.5rem;
+
+    margin-bottom: 25px;
+}
+
+.contenido-nosotros p:not(.subtitulo) {
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #123047;
+    color: white;
+
+    padding: 25px 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 15px;
+
+    text-align: center;
+}
+
+footer a {
+    color: #fbbf24;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   ACCESIBILIDAD
+========================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #fbbf24;
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   RESPONSIVE - TABLETS
+========================= */
+
+@media (max-width: 900px) {
+
+    .grid-destinos {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .contenedor-contacto {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .encabezado-categoria {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE - CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .navegacion {
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 15px 0;
+    }
+
+    .menu {
+        width: 100%;
+
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .seccion-destinos,
+    .contacto,
+    .nosotros {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .grid-destinos {
+        grid-template-columns: 1fr;
+    }
+
+    .encabezado-categoria h2 {
+        font-size: 1.6rem;
+    }
+
+    .formulario-contacto {
+        padding: 25px 20px;
+    }
+
+    .informacion-contacto h2,
+    .contenido-nosotros h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+}

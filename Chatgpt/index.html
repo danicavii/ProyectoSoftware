@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Descubrí increíbles destinos turísticos de playa y montaña.">
+
+    <title>Explora el Mundo | Destinos Turísticos</title>
+
+    <!-- Conexión con el archivo CSS -->
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         ENCABEZADO Y NAVEGACIÓN
+    ========================== -->
+    <header class="encabezado">
+        <div class="contenedor navegacion">
+
+            <a href="#inicio" class="logo" aria-label="Ir al inicio">
+                🌍 Explora<span>Viajes</span>
+            </a>
+
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#nosotros">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             SECCIÓN PRINCIPAL
+        ========================== -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-contenido">
+                <p class="subtitulo">TU PRÓXIMA AVENTURA COMIENZA AQUÍ</p>
+
+                <h1>Descubrí lugares increíbles</h1>
+
+                <p>
+                    Explorá destinos únicos de playa y montaña.
+                    Encontrá inspiración para tu próximo viaje y descargá
+                    una guía para organizar tu aventura.
+                </p>
+
+                <a href="#destinos" class="boton-principal">
+                    Explorar destinos
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DESTINOS
+        ========================== -->
+        <section class="seccion-destinos" id="destinos">
+
+            <div class="titulo-seccion">
+                <p>EXPLORÁ EL MUNDO</p>
+                <h2>Destinos turísticos</h2>
+
+                <p class="descripcion-seccion">
+                    Elegí entre increíbles playas paradisíacas o paisajes
+                    impresionantes de montaña.
+                </p>
+            </div>
+
+
+            <!-- =========================
+                 DESTINOS DE PLAYA
+                 Categoría mostrada inicialmente
+            ========================== -->
+            <section class="categoria" id="playa">
+
+                <div class="encabezado-categoria">
+                    <div>
+                        <span class="icono-categoria">🏖️</span>
+                        <h2>Destinos de playa</h2>
+                    </div>
+
+                    <p>
+                        Sol, arena y mar para disfrutar de unas vacaciones inolvidables.
+                    </p>
+                </div>
+
+
+                <div class="grid-destinos">
+
+                    <!-- Mar del Plata -->
+                    <article class="tarjeta-destino">
+
+                        <img
+                            src="imágenes/mardel.png"
+                            alt="Vista de la playa de Mar del Plata">
+
+                        <div class="contenido-tarjeta">
+
+                            <h3>Mar del Plata</h3>
+
+                            <p>
+                                Uno de los destinos costeros más populares de Argentina.
+                                Combina hermosas playas, gastronomía, paseos y una gran
+                                variedad de actividades para disfrutar durante todo el año.
+                            </p>
+
+                            <a href="guías/mardel.pdf" download>
+                                Descargar guía de viaje ↓
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Cancún -->
+                    <article class="tarjeta-destino">
+
+                        <img
+                            src="imágenes/cancun.png"
+                            alt="Playa de aguas turquesas en Cancún">
+
+                        <div class="contenido-tarjeta">
+
+                            <h3>Cancún</h3>
+
+                            <p>
+                                Famoso por sus playas de arena blanca y aguas cristalinas,
+                                Cancún es un destino ideal para relajarse, practicar deportes
+                                acuáticos y conocer la cultura mexicana.
+                            </p>
+
+                            <a href="guías/cancun.pdf" download>
+                                Descargar guía de viaje ↓
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Aruba -->
+                    <article class="tarjeta-destino">
+
+                        <img
+                            src="imágenes/aruba.png"
+                            alt="Playa paradisíaca con arena blanca y mar azul en Aruba">
+
+                        <div class="contenido-tarjeta">
+
+                            <h3>Aruba</h3>
+
+                            <p>
+                                Una isla caribeña reconocida por sus playas paradisíacas,
+                                aguas transparentes y clima agradable. Es perfecta para
+                                descansar y disfrutar del mar.
+                            </p>
+
+                            <a href="guías/aruba.pdf" download>
+                                Descargar guía de viaje ↓
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 DESTINOS DE MONTAÑA
+            ========================== -->
+            <section class="categoria categoria-montana" id="montana">
+
+                <div class="encabezado-categoria">
+                    <div>
+                        <span class="icono-categoria">🏔️</span>
+                        <h2>Destinos de montaña</h2>
+                    </div>
+
+                    <p>
+                        Paisajes naturales, aventura y experiencias rodeadas de naturaleza.
+                    </p>
+                </div>
+
+
+                <div class="grid-destinos">
+
+                    <!-- Bariloche -->
+                    <article class="tarjeta-destino">
+
+                        <img
+                            src="imágenes/bariloche.png"
+                            alt="Montañas y lago de Bariloche">
+
+                        <div class="contenido-tarjeta">
+
+                            <h3>Bariloche</h3>
+
+                            <p>
+                                Ubicada en la Patagonia argentina, Bariloche ofrece
+                                increíbles lagos, montañas y bosques. Es un destino ideal
+                                para disfrutar de la naturaleza durante todo el año.
+                            </p>
+
+                            <a href="guías/bariloche.pdf" download>
+                                Descargar guía de viaje ↓
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Machu Picchu -->
+                    <article class="tarjeta-destino">
+
+                        <img
+                            src="imágenes/machupicchu.png"
+                            alt="Paisaje montañoso de Machu Picchu">
+
+                        <div class="contenido-tarjeta">
+
+                            <h3>Machu Picchu</h3>
+
+                            <p>
+                                Una de las maravillas más reconocidas del mundo.
+                                Rodeada por las montañas de los Andes, ofrece una
+                                combinación única de historia, cultura y naturaleza.
+                            </p>
+
+                            <a href="guías/machupicchu.pdf" download>
+                                Descargar guía de viaje ↓
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- San Martín de los Andes -->
+                    <article class="tarjeta-destino">
+
+                        <img
+                            src="imágenes/sanmartin.png"
+                            alt="Paisaje natural de San Martín de los Andes">
+
+                        <div class="contenido-tarjeta">
+
+                            <h3>San Martín de los Andes</h3>
+
+                            <p>
+                                Un hermoso destino patagónico rodeado de montañas,
+                                bosques y lagos. Es perfecto para realizar caminatas,
+                                excursiones y actividades al aire libre.
+                            </p>
+
+                            <a href="guías/sanmartin.pdf" download>
+                                Descargar guía de viaje ↓
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+        <section class="contacto" id="contacto">
+
+            <div class="contenedor-contacto">
+
+                <div class="informacion-contacto">
+
+                    <p class="subtitulo">CONTACTANOS</p>
+
+                    <h2>¿Tenés alguna consulta?</h2>
+
+                    <p>
+                        Si necesitás más información sobre nuestros destinos,
+                        completá el formulario y dejános tu mensaje.
+                    </p>
+
+                    <div class="datos-contacto">
+
+                        <div>
+                            <span>✉️</span>
+                            <p>info@exploraviajes.com</p>
+                        </div>
+
+                        <div>
+                            <span>📍</span>
+                            <p>La Plata, Buenos Aires, Argentina</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Formulario -->
+                <form class="formulario-contacto" action="#" method="post">
+
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre</label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ingresá tu nombre"
+                            required>
+                    </div>
+
+
+                    <div class="campo-formulario">
+                        <label for="email">Correo electrónico</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ejemplo@email.com"
+                            required>
+                    </div>
+
+
+                    <div class="campo-formulario">
+                        <label for="mensaje">Mensaje</label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Escribí tu mensaje..."
+                            required></textarea>
+                    </div>
+
+
+                    <button type="submit">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SOBRE NOSOTROS
+        ========================== -->
+        <section class="nosotros" id="nosotros">
+
+            <div class="contenido-nosotros">
+
+                <p class="subtitulo">SOBRE EL SITIO</p>
+
+                <h2>Acerca de ExploraViajes</h2>
+
+                <p>
+                    ExploraViajes es un sitio dedicado a compartir información
+                    sobre diferentes destinos turísticos para ayudar a los viajeros
+                    a descubrir nuevos lugares y planificar sus próximas aventuras.
+                </p>
+
+                <p>
+                    Nuestro objetivo es acercar recomendaciones, información general
+                    y guías de viaje de destinos de playa y montaña, promoviendo el
+                    turismo y el descubrimiento de lugares únicos.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+    <footer>
+
+        <p>
+            © 2026 ExploraViajes - Todos los derechos reservados.
+        </p>
+
+        <a href="#inicio">
+            Volver al inicio ↑
+        </a>
+
+    </footer>
+
+</body>
+</html>
